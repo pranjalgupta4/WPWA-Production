@@ -1191,6 +1191,9 @@ footer a:hover::after {
   #box5 {
     top: 70rem;
   }
+  #cookie-fix{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 480px) {
