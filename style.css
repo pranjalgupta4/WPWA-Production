@@ -486,6 +486,9 @@ header button:hover {
   border-radius: 0.5rem;
   position: relative;
 }
+.section-img {
+  position: relative;
+}
 .section-overtxt {
   position: absolute;
   color: white;
