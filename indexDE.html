@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WPWA Production</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="loadr"></div>
+    <header id="header">
+      <div>
+        <img
+          src="img/header-img.png"
+          alt="header-img"
+          height="50px"
+          width="68.9px"
+        />
+      </div>
+      <div class="header-txt flex">
+        <ul>
+          <li>FILM</li>
+          <li>FOTO</li>
+          <li>CGI</li>
+          <li>AUDIO</li>
+        </ul>
+      </div>
+      <div class="header-txt flex">
+        <ul style="margin-right: 1rem">
+          <li>
+            <a href="indexDE.html" style="text-decoration: none; color: #818080"
+              >DE</a
+            >
+          </li>
+          <li>EN</li>
+        </ul>
+        <button>KONTAKT</button>
+      </div>
+    </header>
+    <div id="side-fix">
+      <img src="img/side-fix.png" alt="side-fix" style="height: 11rem" />
+    </div>
+    <div id="bt-fix">MENU</div>
+    <div class="hidden" id="menu-fix">
+      <img src="img/header-img.png" alt="header" />
+      <ul>
+        <li>FILM</li>
+        <li>FOTO</li>
+        <li>CGI</li>
+        <li>AUDIO</li>
+        <li>KONTAKT</li>
+      </ul>
+      <ul>
+        <li>
+          <a href="indexDE.html" style="text-decoration: none; color: #818080"
+            >DE</a
+          >
+        </li>
+        <li style="font-weight: 1000">EN</li>
+      </ul>
+      <p id="close-menu">CLOSE MENU</p>
+    </div>
+    <div id="bottom-fix">
+      <img src="img/bottom-fix.png" alt="bottom-fix" style="height: 1rem" />
+    </div>
+    <div class="hidden" id="cookie-fix">
+      <div class="cFlex">
+        <p>Cookie settings</p>
+        <img src="img/cross.png" alt="cross" id="box-closer" />
+      </div>
+      <div class="cFlex3">
+        <p>Your current state</p>
+        <ul>
+          <li><img src="img/lock.png" alt="lock" />Necessary</li>
+          <li><img src="img/cross.png" alt="cross" />Preferences</li>
+          <li><img src="img/cross.png" alt="cross" />Statistics</li>
+          <li><img src="img/cross.png" alt="cross" />Marketing</li>
+        </ul>
+      </div>
+      <div class="cFlex2">
+        <button>Withdraw your consent</button>
+        <button id="change-consent">Change your consent</button>
+      </div>
+    </div>
+    <div class="hidden" id="cookie-manager">
+      <img src="img/watcherpart2.png" alt="watcherpart2" />
+      <div class="menu">
+        <h4 class="border menu-sub" id="menu-sub1">Consent</h4>
+        <h4 class="menu-sub" id="menu-sub2">Details</h4>
+        <h4 class="menu-sub" id="menu-sub3">About</h4>
+      </div>
+      <div class="consent" id="consent">
+        <div>
+          <h4>This website uses cookies</h4>
+          <p>
+            We use cookies to personalise content and ads, to provide social
+            media features and to analyse our traffic. We also share information
+            about your use of our site with our social media, advertising and
+            analytics partners who may combine it with other information that
+            you’ve provided to them or that they’ve collected from your use of
+            their services.
+          </p>
+        </div>
+        <div>
+          <section class="togglebox">
+            <h4>Necessary</h4>
+            <input
+              disabled
+              checked
+              type="checkbox"
+              id="check3"
+              class="toggle"
+            />
+            <label for="check3" id="label1"></label>
+          </section>
+          <section class="togglebox">
+            <h4>Preferences</h4>
+            <input type="checkbox" id="check2" class="toggle" />
+            <label for="check1" id="label2"></label>
+          </section>
+          <section class="togglebox">
+            <h4>Statistics</h4>
+            <input type="checkbox" id="check1" class="toggle" />
+            <label for="check1" id="label3"></label>
+          </section>
+          <section class="togglebox">
+            <h4>Marketing</h4>
+            <input type="checkbox" id="check1" class="toggle" />
+            <label for="check1" id="label4"></label>
+          </section>
+        </div>
+      </div>
+      <div class="about hidden" id="about">
+        <p>
+          Cookies are small text files that can be used by websites to make a
+          user's experience more efficient. The law states that we can store
+          cookies on your device if they are strictly necessary for the
+          operation of this site. For all other types of cookies we need your
+          permission. This site uses different types of cookies. Some cookies
+          are placed by third party services that appear on our pages. You can
+          at any time change or withdraw your consent from the Cookie
+          Declaration on our website. Learn more about who we are, how you can
+          contact us and how we process personal data in our Privacy Policy.
+          Please state your consent ID and date when you contact us regarding
+          your consent.
+        </p>
+      </div>
+      <div class="button-grp">
+        <button class="close-menu2" id="allownone">Deny</button>
+        <button class="close-menu2">Allow Selection</button>
+        <button class="close-menu2" id="allowall">Allow all</button>
+      </div>
+    </div>
+    <main>
+      <div class="backgrnd-div">
+        <h1 class="first-txt">
+          Content Factory für <span>Film</span>, <span>Foto</span>,
+          <span>Podcast</span> und <span>Renderings</span>. Wir schaffen cool
+          Inhalte für <span>soziale Medien</span> und erfinden Sie fesselnde
+          Geschichten und werde viral!
+        </h1>
+      </div>
+      <div>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div>
+          <video id="box5" controls>
+            <source src="img/parallax-vid.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="div-grid">
+        <section class="section-flex">
+          <div class="section-h2"><h2>FILM</h2></div>
+          <div>
+            <ul class="section-ul">
+              <li>Image Film</li>
+              <li>Produkt Film</li>
+              <li>Werbe Spot</li>
+              <li>Webinar</li>
+              <li>Live Stream</li>
+            </ul>
+          </div>
+          <div class="section-img">
+            <img src="img/section1.webp" alt="section1" />
+            <div class="section-overtxt">ZUM PROTOFOLIO</div>
+          </div>
+        </section>
+        <section class="section-flex">
+          <div class="section-h2"><h2>FOTO</h2></div>
+          <div>
+            <ul class="section-ul">
+              <li>Image FOTO</li>
+              <li>ProduKt FOTO</li>
+              <li>Potrats</li>
+              <li>360&#176; Google Bussiness View</li>
+            </ul>
+          </div>
+          <div class="section-img">
+            <img src="img/section2.webp" alt="section2" />
+            <div class="section-overtxt">ZUM PROTOFOLIO</div>
+          </div>
+        </section>
+        <section class="section-flex">
+          <div class="section-h2"><h2>CGI</h2></div>
+          <div>
+            <ul class="section-ul">
+              <li>Animationen</li>
+              <li>Renderings</li>
+            </ul>
+          </div>
+          <div class="section-img">
+            <img src="img/section3.webp" alt="section1" />
+            <div class="section-overtxt">ZUM PROTOFOLIO</div>
+          </div>
+        </section>
+        <section class="section-flex">
+          <div class="section-h2"><h2>AUDIO</h2></div>
+          <div>
+            <ul class="section-ul">
+              <li>Interviews</li>
+              <li>Podcasts</li>
+              <li>Soundlogos And Jingles</li>
+              <li>Werbespots</li>
+              <li>Sounddesign</li>
+            </ul>
+          </div>
+          <div class="section-img">
+            <img src="img/section4.webp" alt="section1" />
+            <div class="section-overtxt">ZUM PROTOFOLIO</div>
+          </div>
+        </section>
+      </div>
+      <div class="bigpicture-cont">
+        <h2 class="bigpicture-h2">THE BIG PICTURE</h2>
+        <div class="bigpicture-cont2">
+          <div>
+            <h3>WATCHER<br />PARTS</h3>
+            <p class="para">
+              Als Kreativagentur gestalten wir zeitgerechte Marken, die als
+              erfolgreiches Ganzes wirken. Mit viel Kreativität und perfekt
+              aufeinander abgestimmten Teilen helfen wir unseren Kunden dabei,
+              ihre Ziele mit einem WOW zu erreichen.
+            </p>
+            <p class="logo">ZUR WEBSITE</p>
+            <div class="div-grid2">
+              <div>
+                <img src="img/bigpicture-img.mp4.png" alt="bigpicture-img" />
+                <p class="para">
+                  Als Digitalagentur für anspruchsvolle Marken entwickeln wir
+                  smarte Lösungen für alle Kanäle.
+                </p>
+              </div>
+              <div>
+                <img src="img/header-img.png" alt="header-img" />
+                <p class="para">
+                  Als Produktionsteam realisieren wir Bild-, Film- und
+                  Audioproduktionen auf höchstem Niveau.
+                </p>
+              </div>
+            </div>
+            <p class="logo">ZUR WEBSITE</p>
+          </div>
+          <video muted autoplay loop src="img/bigpicture-vid.mp4"></video>
+        </div>
+      </div>
+      <div class="bts-main">
+        <div class="bts-sub1" id="bts-sub1">
+          <!-- <img src="img/bts-bigimg1.webp" alt="bts-bigimg1" /> -->
+        </div>
+        <div class="bts-sub2">
+          <h2>HINTER DEN KULISSEN</h2>
+          <p>
+            Hier werden Ideen zum Leben erweckt! Unsere Galerie bietet
+            faszinierende Einblicke in den kreativen Prozess unseres
+            Produktionsteams.
+          </p>
+        </div>
+      </div>
+      <div class="bts-bigimg" id="bts-bigimg">
+        <img src="img/bts-bigimg1.webp" alt="bts-bigimg1" id="bts-bigimg1" />
+        <img src="img/bts-bigimg2.webp" alt="bts-bigimg1" id="bts-bigimg2" />
+        <img src="img/bts-bigimg3.webp" alt="bts-bigimg1" id="bts-bigimg3" />
+        <img src="img/bts-bigimg4.webp" alt="bts-bigimg1" id="bts-bigimg4" />
+      </div>
+      <div id="bts-Simg"></div>
+      <div class="testmnl">
+        <div><h2>KUNDENSTIMEN</h2></div>
+        <div id="testmnl-sub"></div>
+        <div class="tbox">
+          <div id="tbox1">
+            <p>
+              "Mit WPWA hatten wir den idealen Partner für die Erstellung der
+              360°-Rundgänge durch unsere Rehakliniken. Das Team ist freundlich
+              & professionell und hat es immer wieder schnell geschafft, sich
+              auf die unterschiedlichen Gegebenheiten vor Ort einzustellen und
+              die besten Impressionen einzufangen. Mit dem Ergebnis können wir
+              unseren Patientinnen und Patienten tolle Einblicke in unsere
+              Rehazentren bieten und schaffen so weiteres Vertrauen."
+            </p>
+            <figcaption>Sabine Nicolaus<br />medico GmbH & Co. KG</figcaption>
+          </div>
+          <div id="tbox2">
+            <p>
+              "WPWA entwickelt nicht nur kreative und strategische Konzepte zur
+              Markenbildung, sondern unterstützt auch mit ausgefeilten Journeys
+              beim Thema Marketing Automation. Somit wird der Kunde nicht nur in
+              den Bann gezogen, sondern darf sich auf eine lange Reise mit der
+              Marke begeben, die zu guter Letzt in wertvollem Umsatz endet. Das
+              Team von WPWA, wie auch Sebastian selbst, hatten immer ein offenes
+              Ohr für Anliegen, agierten super flexibel und professionell auch
+              unter extremen Zeitdruck!"
+            </p>
+            <figcaption>Natalie Heinrich<br />Clyde Mobility AG</figcaption>
+          </div>
+          <div id="tbox3">
+            <p>
+              "Ein Konglomerat aus äußerst fähigen, motivierten und ideenreichen
+              Mitarbeitern und einer starken Führung. Mit dieser Firma kommt man
+              ganz weit nach vorne. Sie reagiert nicht, sie agiert proaktiv, ja
+              sogar vernetzt denkend und versetzt sich zu jeder Idee in die Lage
+              ihres Kunden und erarbeitet mit den Kollegen darauf basierend
+              wirkungsvolle und stimmige Konzepte!!!! So muss es funktionieren,
+              wenn man gemeinsam erfolgreich werden will!<br /><br />Danke im
+              Namen der Firma Geramöbel!"
+            </p>
+            <figcaption>Geramöbel GmbH</figcaption>
+          </div>
+          <div id="tbox4">
+            <p>
+              "Sehr freundliche, äußerst kreative Mitarbeiter. Die Kommunikation
+              läuft flüssig. Alle Wünsche und Anregungen wurden in kurzer Zeit
+              umgesetzt. Es wird viel Wert auch auf das kleineste Detail gelegt,
+              so das das Ergebnis der Arbeiten zufrieden stellend ist und
+              überzeugt."
+            </p>
+            <figcaption>
+              Heinz Schneider<br />Struth Handels GmbH & Co. KG
+            </figcaption>
+          </div>
+        </div>
+      </div>
+      <div class="lastbit">
+        <h2>WIE KONNEN WIR HELFEN?</h2>
+        <div class="lastbit-div1">
+          <p>WPWA Team GmbH</p>
+          <p>Sandstraße 31<br />80335 Munich</p>
+          <p>
+            <a href="info@wpwa.team">info@wpwa.team</a><br />
+            <a href="tel:+4989125092330">+4989125092330</a>
+          </p>
+          <div id="lastbit-img">
+            <img src="img/social1.png" alt="social1" />
+            <img src="img/social2.png" alt="social2" />
+            <img src="img/social3.png" alt="social3" />
+            <img src="img/social4.png" alt="social4" />
+          </div>
+        </div>
+        <div class="form">
+          <div>
+            <p>VORNAME*</p>
+            <input class="input-data name" type="text" />
+            <p class="error">Enter your valid first name.</p>
+          </div>
+          <div>
+            <p>NACHNAME*</p>
+            <input class="input-data name" type="text" />
+            <p class="error">Enter your valid last name.</p>
+          </div>
+          <div>
+            <p>EMAIL*</p>
+            <input class="input-data" id="email" type="text" />
+            <p class="error">Enter your valid email.</p>
+          </div>
+          <div>
+            <p>NACHRICHT*</p>
+            <textarea class="input-data" id="message"></textarea>
+            <p class="error">Enter your message.</p>
+          </div>
+          <p id="ack">
+            Ich habe die
+            <a href="https://wpwa.pro/en/privacy">Datenschutzerklärung</a> zur
+            Kenntnis genommen..
+          </p>
+          <button id="send" value="de">SENDEN</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <div>
+          <div>
+            <p>Services</p>
+            <a href="https://wpwa.pro/en/film">Film</a>
+            <a href="https://wpwa.pro/en/photo">Foto</a>
+            <a href="https://wpwa.pro/en/cgi">CGI</a>
+            <a href="https://wpwa.pro/en/audio">Audio</a>
+          </div>
+          <div>
+            <p>Social Media</p>
+            <a href="https://www.instagram.com/wachterparts.wpwa">Instagram</a>
+            <a href="https://www.facebook.com/wachterparts">Facebook</a>
+            <a href="https://www.youtube.com/@wachterparts">Youtube</a>
+            <a href="https://www.youtube.com/@wachterparts">Linkedin</a>
+          </div>
+          <div>
+            <p>Contact</p>
+            <a href="mailto:info@wpwa.team">info@wpwa.team</a>
+            <a href="tel:+4989125092330">+4989125092330</a>
+            <ul>
+              <li><img src="img/watcherpart.png" alt="watcherpart" /></li>
+              <li><img src="img/bigpicture-img.mp4.png" alt="bigpicture" /></li>
+              <li><img src="img/header-img.png" alt="header-img" /></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sub-footer">
+          <ul>
+            <li>
+              <a href="https://wpwa.pro/en/legal" class="sub-footer-a"
+                >Impressum</a
+              >
+            </li>
+            <li>
+              <a href="https://wpwa.pro/en/privacy" class="sub-footer-a"
+                >Datenschutz</a
+              >
+            </li>
+            <li>
+              <a href="https://wpwa.pro/en/terms" class="sub-footer-a">Terms</a>
+            </li>
+          </ul>
+          <p class="sub-footer-a">2024 WPWA Team Gmbh</p>
+        </div>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
