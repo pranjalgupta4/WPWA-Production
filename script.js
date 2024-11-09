@@ -349,16 +349,9 @@ let validation = document.querySelectorAll(".name");
 let email = document.getElementById("email");
 let message = document.getElementById("message");
 button.addEventListener("click", function () {
-  let signal = 0;
+  
   let signal2 = 0;
-  // inputs.forEach((ele, index) => {
-  //   if (ele.value === "") {
-  //     errors[index].style.opacity = "1";
-  //   } else {
-  //     errors[index].style.opacity = "0";
-  //     signal += 1;
-  //   }
-  // });
+  
   const name_regex = /^[A-Za-z\s\-]+$/;
   validation.forEach((ele, index) => {
     if (name_regex.test(ele.value)) {
@@ -382,9 +375,9 @@ button.addEventListener("click", function () {
     errors[3].style.opacity = "0";
     signal2 += 1;
   }
-  if (signal == 4 && buttonval == "en" && signal2 == 4)
+  if ( buttonval == "en" && signal2 == 4)
     window.open("https://wpwa.pro/en/thank-you");
-  if (signal == 4 && button == "de" && signal2 == 4) window.open("https://wpwa.pro/de/danke");
+  if ( button == "de" && signal2 == 4) window.open("https://wpwa.pro/de/danke");
 });
 
 // ---------------------//
