@@ -75,7 +75,7 @@ main {
   z-index: 100;
   width: 5.8rem;
   height: 3.2rem;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
   color: white;
   border-radius: 4rem;
   text-align: center;
@@ -354,7 +354,7 @@ header div:nth-child(3) {
 header ul {
   display: flex;
   list-style-type: none;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
   gap: 1rem;
   height: 3.5rem;
   border-radius: 0.7rem;
@@ -399,7 +399,7 @@ header button:hover {
   margin-left: 1rem;
 }
 #box1 {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
   background: #ffffff33 url("img/parallax-1.webp");
   background-size: cover;
   height: 17rem;
@@ -411,7 +411,7 @@ header button:hover {
   left: 0.7rem;
 }
 #box2 {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
   background: #ffffff33 url("img/parallax-2.webp");
   background-size: cover;
   height: 17rem;
@@ -423,7 +423,7 @@ header button:hover {
   right: 0.9rem;
 }
 #box3 {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
   background: url(img/parallax-3.webp) #ffffff33;
   background-size: cover;
   height: 15rem;
@@ -436,7 +436,7 @@ header button:hover {
 }
 #box4 {
   background: #ffffff33 url(img/parallax-4.webp);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
   background-size: cover;
   height: 18rem;
   width: 18rem;
@@ -683,7 +683,7 @@ header button:hover {
   position: absolute;
   z-index: 2;
   padding: 1.3rem;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
 }
 #tbox1 {
   top: 35rem;
