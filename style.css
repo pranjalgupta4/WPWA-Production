@@ -29,6 +29,9 @@ main {
   flex-direction: column;
   justify-content: center;
 }
+.scroller{
+  overflow: hidden;
+}
 .flex {
   display: flex;
   align-items: center;
