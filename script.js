@@ -385,15 +385,18 @@ button.addEventListener("click", function () {
 let btfix = document.getElementById("bt-fix");
 let menufix = document.getElementById("menu-fix");
 let closemenu = document.getElementById("close-menu");
+let body = document.getElementsByTagName("body")[0];
 
 btfix.addEventListener("click", function () {
   menufix.classList.toggle("active");
   menufix.classList.toggle("hidden");
+  body.classList.add("scroller");
 });
 
 closemenu.addEventListener("click", function () {
   menufix.classList.toggle("active");
   menufix.classList.toggle("hidden");
+  body.classList.remove("scroller");
 });
 
 // ||BOX CLOSER
