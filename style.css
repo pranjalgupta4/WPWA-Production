@@ -29,7 +29,7 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.scroller{
+.scroller {
   overflow: hidden;
 }
 .flex {
@@ -45,9 +45,7 @@ main {
   display: grid;
   grid-template-rows: repeat(4, auto);
 }
-.active2 {
-  display: block;
-}
+
 .hidden {
   display: none;
 }
@@ -78,7 +76,8 @@ main {
   z-index: 100;
   width: 5.8rem;
   height: 3.2rem;
-  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: white;
   border-radius: 4rem;
   text-align: center;
@@ -145,11 +144,15 @@ main {
   bottom: 0.4rem;
   left: 0.4rem;
   background-color: white;
-  height: 25rem;
-  width: 30rem;
   z-index: 200;
   font-family: Helvetica, sans-serif;
   border-radius: 1rem;
+}
+.cookie-fix {
+  scale: 0;
+  width: 0;
+  height: 0;
+  transition: all 0.2s;
 }
 #cookie-fix p {
   font-weight: 550;
@@ -341,23 +344,30 @@ header {
   z-index: 90;
   top: 0;
   transition: top 200s;
-  margin: 1.5rem 0 1.5rem 1rem;
+  margin: 1.5rem 0 3rem 1rem;
   height: 4.2rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
 }
+header div:nth-child(1) {
+  grid-column: span 3;
+  justify-self: start;
+}
 header div:nth-child(2) {
-  grid-column: 6 / 9;
+  grid-column: span 6;
+  justify-self: center;
 }
 header div:nth-child(3) {
-  grid-column: 10/13;
+  grid-column: span 3;
+  justify-self: end;
 }
 
 header ul {
   display: flex;
   list-style-type: none;
-  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   gap: 1rem;
   height: 3.5rem;
   border-radius: 0.7rem;
@@ -402,7 +412,8 @@ header button:hover {
   margin-left: 1rem;
 }
 #box1 {
-  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background: #ffffff33 url("img/parallax-1.webp");
   background-size: cover;
   height: 17rem;
@@ -414,7 +425,8 @@ header button:hover {
   left: 0.7rem;
 }
 #box2 {
-  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background: #ffffff33 url("img/parallax-2.webp");
   background-size: cover;
   height: 17rem;
@@ -426,7 +438,8 @@ header button:hover {
   right: 0.9rem;
 }
 #box3 {
-  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background: url(img/parallax-3.webp) #ffffff33;
   background-size: cover;
   height: 15rem;
@@ -439,7 +452,8 @@ header button:hover {
 }
 #box4 {
   background: #ffffff33 url(img/parallax-4.webp);
-  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background-size: cover;
   height: 18rem;
   width: 18rem;
@@ -550,8 +564,8 @@ header button:hover {
   margin-bottom: 2rem;
 }
 .para {
-  font: 0.9rem lato;
-  width: 17rem;
+  font: 15px lato;
+  width: 70%;
   line-height: 1.6;
 }
 .logo {
@@ -583,14 +597,14 @@ header button:hover {
   grid-template-columns: repeat(2, 50%);
   margin-top: 10rem;
   gap: 0rem;
-  width: 80%;
 }
+
 .div-grid2 img {
   height: 3rem;
   margin-bottom: 2rem;
 }
 .div-grid2 p {
-  width: 10rem;
+  width: 80%;
 }
 /* -------------- */
 
@@ -686,7 +700,8 @@ header button:hover {
   position: absolute;
   z-index: 2;
   padding: 1.3rem;
-  backdrop-filter: blur(8px);   -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 #tbox1 {
   top: 35rem;
@@ -913,17 +928,25 @@ footer a:hover::after {
 
 /* --------------------- */
 
+.active2 {
+  display: block;
+  scale: 1;
+  height: 25rem;
+  width: 30rem;
+  transition: all 0.2s;
+}
+
 /* ||MEDIA QUERIES */
 @media screen and (min-width: 1441px) {
   main,
   footer section {
-    max-width: 1800px;
+    max-width: 1900px;
     margin: auto;
   }
   header {
-    margin: 1rem auto;
-    max-width: 1800px;
-    padding: 0 1.5rem;
+    margin: 1rem auto 3rem auto;
+    max-width: 1900px;
+    /* padding: 0 1.5rem; */
   }
   .first-txt {
     font-size: 8rem;
@@ -969,6 +992,9 @@ footer a:hover::after {
   .bigpicture-cont video {
     height: 100%;
     width: 100%;
+  }
+  .para {
+    font-size: 18px;
   }
   .bts-sub2 h2 {
     font-size: 4.1rem;
@@ -1072,12 +1098,11 @@ footer a:hover::after {
     background-color: transparent;
     border-color: white;
   }
-  .section-overtxt:hover{
+  .section-overtxt:hover {
     transform: scaleY(1.1) translateX(0%);
     background-color: white;
     color: #000;
     transition: all 1s ease-in-out;
-    
   }
   .bigpicture-cont2 {
     display: flex;
@@ -1124,7 +1149,6 @@ footer a:hover::after {
     grid-row: 3;
     grid-column: 4/12;
   }
-
 }
 
 @media screen and (max-width: 959px) {
@@ -1308,43 +1332,43 @@ footer a:hover::after {
     display: flex;
     flex-direction: column;
   }
-  .lastbit{
-    grid-template-columns: repeat(1,auto);
+  .lastbit {
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(3, auto);
   }
-  .lastbit h2{
+  .lastbit h2 {
     grid-column: span 1;
   }
-  .lastbit-div1{
+  .lastbit-div1 {
     grid-column: span 1;
   }
-  .form{
+  .form {
     grid-column: span 1;
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(6, auto);
   }
-  
-  .form div:nth-child(2){
+
+  .form div:nth-child(2) {
     grid-row: 2;
     grid-column: span 1;
   }
-  .form div:nth-child(1){
+  .form div:nth-child(1) {
     grid-row: 1;
     grid-column: span 1;
   }
-  .form div:nth-child(3){
+  .form div:nth-child(3) {
     grid-row: 3;
     grid-column: span 1;
   }
-  .form div:nth-child(4){
+  .form div:nth-child(4) {
     grid-row: 4;
     grid-column: span 1;
   }
-  #ack{
+  #ack {
     grid-column: span 1;
     grid-row: 5;
   }
-  .lastbit button{
+  .lastbit button {
     grid-column: span 1;
     grid-row: 6;
   }

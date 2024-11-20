@@ -349,9 +349,8 @@ let validation = document.querySelectorAll(".name");
 let email = document.getElementById("email");
 let message = document.getElementById("message");
 button.addEventListener("click", function () {
-  
   let signal2 = 0;
-  
+
   const name_regex = /^[A-Za-z\s\-]+$/;
   validation.forEach((ele, index) => {
     if (name_regex.test(ele.value)) {
@@ -375,9 +374,9 @@ button.addEventListener("click", function () {
     errors[3].style.opacity = "0";
     signal2 += 1;
   }
-  if ( buttonval == "en" && signal2 == 4)
+  if (buttonval == "en" && signal2 == 4)
     window.open("https://wpwa.pro/en/thank-you");
-  if ( button == "de" && signal2 == 4) window.open("https://wpwa.pro/de/danke");
+  if (button == "de" && signal2 == 4) window.open("https://wpwa.pro/de/danke");
 });
 
 // ---------------------//
@@ -413,11 +412,15 @@ consent = document.getElementById("consent");
 about = document.getElementById("about");
 
 boxcloser.addEventListener("click", function () {
+  setTimeout(function () {
+    cookiefix.classList.toggle("hidden");
+  }, 200);
   cookiefix.classList.toggle("active2");
-  cookiefix.classList.toggle("hidden");
 });
 bottomfix.addEventListener("click", function () {
-  cookiefix.classList.toggle("active2");
+  setTimeout(function () {
+    cookiefix.classList.toggle("active2");
+  }, 1);
   cookiefix.classList.toggle("hidden");
 });
 function boxopener() {
@@ -481,7 +484,7 @@ allowall.addEventListener("click", function () {
   label3.classList.add("translate");
   label4.classList.add("translate");
 });
-let allownone = document.getElementById("allowsel");
+let allownone = document.getElementById("allownone");
 allownone.addEventListener("click", function () {
   label2.classList.remove("translate");
   label3.classList.remove("translate");
